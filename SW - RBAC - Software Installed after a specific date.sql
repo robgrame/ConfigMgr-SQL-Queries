@@ -19,6 +19,5 @@ and isw.TimeStamp > @StartDate
 and sic.ChangeType = 'I'
 and sic.DisplayName = 'Installed Software'
 and os.InstallDate0 < @StartDate
---and isw.InstallDate0 > @StartDate
 and sic.ResourceID in ( select fcm.ResourceID from fn_rbac_FullCollectionMembership(@UserSIDs) fcm where fcm.CollectionID = @CollectionID)
 order by isw.TimeStamp DESC
