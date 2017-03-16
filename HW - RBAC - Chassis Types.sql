@@ -1,4 +1,4 @@
-declare @CollectionID as nvarchar(8) = 'SMSDM003'
+declare @CollectionID as nvarchar(8) = 'SMSDM003' -- All Desktop and Server clients collection
 
 select 
 r.Name0 Computername,
